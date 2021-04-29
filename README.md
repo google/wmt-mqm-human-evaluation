@@ -8,16 +8,6 @@ To ensure maximum diversity in ratings, we assigned documents in round-robin fas
 
 We refer to our paper for more details of the experimental setup.
 
-## Types of extra human evaluations ##
-### Multidimensional Quality Metrics (MQM) ###
-The Multidimensional Quality Metrics (MQM) framework was developed in the EU QTLaunchPad and [QT21](www.qt21.eu) projects.
-It provides a generic methodology for assessing translation quality that can be adapted to a wide range of evaluation needs. The core idea is to establish a standard hierarchy of translation issues (potential errors) that can be pruned or extended with new issues as required. Annotators identify issues in text at a suitable granularity, and the results are summarized using a procedure that is specific to the application. Please read our paper to see how we adapted MQM to the machine translation use case.
-
-### Scalar Quality Metrics (SQM) ###
-Similar to the WMT setting, the Scalar Quality Metric (SQM) evaluation collects segment-level scalar ratings with document context. Different from the 0-100 assessment of translation quality used in WMT, SQM uses a 0-6 scale for
-translation quality assessment. Another difference is that the sentences were rated by professional translators instead of crowd workers or researchers. We refer to pSQM for SQM labels that were acquired with professional translators.
-
-
 ## Files part of this repository ##
 
 1. [mqm_newstest2020_ende.tsv](ende/mqm_newstest2020_ende.tsv) MQM labels aqcuired for 10 submission of WMT 2020 for English-to-German.
@@ -55,3 +45,34 @@ DeepMind.381\
 OPPO.1422\
 THUNLP.1498
 
+
+## Types of extra human evaluations ##
+### Multidimensional Quality Metric (MQM) ###
+To adapt the generic MQM framework for our context, we followed the official [guidelines](http://qt21.eu/downloads/MQM-usage-guidelines.pdf) for scientific research.
+
+Our annotators were instructed to identify all errors within each segment in a document, paying particular attention to document context. Each error was highlighted in the text, and labeled with an error category and a severity. To temper the effect of long segments, we imposed a maximum of five errors per segment, instructing raters to choose the five most severe errors for segments containing more errors.
+Our error` hierarchy includes the standard top-level categories Accuracy, Fluency, Terminology, Style, and Locale, each with a specific set of  sub-categories. After an initial pilot run, we introduced a special Non-translation error that can be used to tag an entire segment which is too badly garbled to permit reliable identification of individual errors.Error severities are assigned independent of category, and consist of Major, Minor, and Neutral levels, corresponding respectively to actual translation or grammatical errors, smaller imperfections, and purely subjective opinions about the translation. 
+
+Since we are ultimately interested in scoring segments, we require a weighting on error types. We fixed the weight on Minor errors at 1, and explored a range of Major weights from 1 to 10 (the Major weight recommended in the MQM standard). For each weight combination we examined the stability of system ranking using a resampling technique. We found that a Major weight of 5 gave the best balance between stability and ability to discriminate among systems.
+
+These weights apply to all error categories with two exceptions. We assigned a weight of 0.1 to Minor Fluency/Punctuation errors to reflect their mostly non-linguistic nature. Decisions like the style of quotation mark to use or the spacing around punctuation affect the appearance of a text but do not change its meaning. Unlike other kinds of Minor errors, these are easy to correct algorithmically, so we assign a low weight to ensure that their main role is to distinguish between systems that are equivalent in other respects. Major Fluency/Punctuation errors, which render a text ungrammatical or change its meaning (eg, eliding the comma in “Let’s eat, grandma”), have standard weighting.
+The second exception is the singleton Non-translation category, with a weight of 25, equivalent to five Major errors.
+
+### Scalar Quality Metrics (SQM) ###
+Similar to the WMT setting, the Scalar Quality Metric (SQM) evaluation collects segment-level scalar ratings with document context. Different from the 0-100 assessment of translation quality used in WMT, SQM uses a 0-6 scale for
+translation quality assessment. Another difference is that the sentences were rated by professional translators instead of crowd workers or researchers. We refer to pSQM for SQM labels that were acquired with professional translators.
+
+## Credits ##
+
+If you use this data, please cite the following paper:
+
+```
+@misc{freitag2021expert,
+      title={Experts, Errors, and Context: A Large-Scale Study of Human Evaluation for Machine Translation},
+      author={Markus Freitag, George Foster, David Grangier, Viresh Ratnakar, Qijun Tan, Wolfgang Macherey},
+      year={2021},
+      eprint={2004.06063},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```

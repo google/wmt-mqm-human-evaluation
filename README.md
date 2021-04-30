@@ -67,11 +67,11 @@ translation quality assessment. Another difference is that the sentences were ra
 If you use this data, please cite the following paper:
 
 ```
-@misc{freitag2021expert,
-      title={Experts, Errors, and Context: A Large-Scale Study of Human Evaluation for Machine Translation},
-      author={Markus Freitag, George Foster, David Grangier, Viresh Ratnakar, Qijun Tan, Wolfgang Macherey},
+@misc{freitag2021experts,
+      title={Experts, Errors, and Context: A Large-Scale Study of Human Evaluation for Machine Translation}, 
+      author={Markus Freitag and George Foster and David Grangier and Viresh Ratnakar and Qijun Tan and Wolfgang Macherey},
       year={2021},
-      eprint={2004.06063},
+      eprint={2104.14478},
       archivePrefix={arXiv},
       primaryClass={cs.CL}
 }

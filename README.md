@@ -8,6 +8,8 @@ To ensure maximum diversity in ratings, we assigned documents in round-robin fas
 
 We refer to our paper for more details of the experimental setup.
 
+You can use the [MQM Viewer](https://github.com/google-research/google-research/tree/master/mqm_viewer) web app to open these TSV data files for computing scores as well as for interactively slicing and dicing.
+
 ## Files part of this repository ##
 
 1. [mqm_newstest2020_ende.tsv](ende/mqm_newstest2020_ende.tsv) MQM labels aqcuired for 10 submission of WMT 2020 for English-to-German.

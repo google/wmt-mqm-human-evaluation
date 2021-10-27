@@ -27,12 +27,12 @@ You can use the [MQM Viewer](https://github.com/google-research/google-research/
 8. [mqm-ted_zhen.tsv](ted/zhen/mqm-ted_zhen.tsv) MQM labels aqcuired for 15 submission of TED talks for Chinese-to-English.
 
 
-## Individual system included in the re-evaluation for newstest2020 ##
+## newstest2020 ##
 
 ### English to German ###
 
 | System  | expert-based MQM | WMT DA |
-| ------------- | ------------- |
+| ------------- | ------------- | ------------- |
 | Human-B | 0.75(1) | 0.57(1) |
 | Human-A | 0.91(2) | 0.45(4) |
 | Human-P | 1.41(3) | 0.30(10) |
@@ -47,7 +47,7 @@ You can use the [MQM Viewer](https://github.com/google-research/google-research/
 ### Chinese to English ###
 
 | System  | expert-based MQM | WMT DA |
-| ------------- | ------------- |
+| ------------- | -------------  |------------- |
 | Human-A | 3.43(1) | - |
 | Human-B | 3.62(2) | -0.03(9) |
 | VolcTrans | 5.03(3) | 0.10(1) |

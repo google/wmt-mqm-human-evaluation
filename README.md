@@ -4,7 +4,7 @@ The contents of this repository are not an official Google product.
 
 We re-annotated the WMT English to German and Chinese to English test sets newstest2020, newstest2021, and the TED talks WMT21 test suite with raters that are professional translators and native speakers of the target language.
 The resulting human ratings are more reliable than crowd-worker human evaluations. 
-We refer to our paper for more details of the experimental setup.
+We refer to our [paper]{https://arxiv.org/pdf/2104.14478.pdf} for more details of the experimental setup.
 
 You can use the [MQM Viewer](https://github.com/google-research/google-research/tree/master/mqm_viewer) web app to open these TSV data files for computing scores as well as for interactively slicing and dicing.
 

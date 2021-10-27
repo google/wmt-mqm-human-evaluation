@@ -30,30 +30,32 @@ You can use the [MQM Viewer](https://github.com/google-research/google-research/
 ## Individual system included in the re-evaluation for newstest2020##
 
 ### English to German ###
- System
-
-Human-A.0\
-Human-B.0\
-Human-P.0\
-OPPO.1535\
-Tohoku-AIP-NTT.890\
-Online-B.1590\
-Tencent Translation.1520\
-Huoshan Translate.832\
-Online-A.1574\
-eTranslation.737
+| System  | expert-based MQM | WMT DA |
+| ------------- | ------------- |
+| Human-B | 0.75(1) | 0.57(1) |
+| Human-A | 0.91(2) | 0.45(4) |
+| Human-P | 1.41(3) | 0.30(10) |
+| Tohoku-AIP-NTT | 2.02(4) | 0.47(3) |
+| OPPO | 2.25(5) | 0.50(2) |
+| eTranslation | 2.33(6) | 0.31(9) |
+| Tencent_Translation | 2.35(7) | 0.39(6) |
+| Huoshan_Translate | 2.45(8) | 0.33(7) |
+| Online-B | 2.48(9) | 0.42(5) |
+| Online-A | 2.99(10) | 0.32(8) |
 
 ### Chinese to English ###
-Human-A 3.43(1)\
-Human-B 3.62(2)\
-VolcTrans 5.03(3)\
-WeChat_AI 5.13(4)\
-Tencent_Translation 5.19(5)\
-OPPO 5.20(6)\
-THUNLP 5.34(7)\
-DeepMind 5.41(8)\
-DiDi_NLP 5.48(9)\
-Online-B 5.85(10)\
+| System  | expert-based MQM | WMT DA |
+| ------------- | ------------- |
+| Human-A | 3.43(1) | - |
+| Human-B | 3.62(2) | -0.03(9) |
+| VolcTrans | 5.03(3) | 0.10(1) |
+| WeChat_AI | 5.13(4) | 0.08(3) |
+| Tencent_Translation | 5.19(5) | 0.06(4) |
+| OPPO | 5.20(6) | 0.05(7) |
+| THUNLP | 5.34(7) | 0.03(8) |
+| DeepMind | 5.41(8) | 0.05(6) |
+| DiDi_NLP | 5.48(9) | 0.09(2) |
+| Online-B | 5.85(10) | 0.06(5) |
 
 
 ## Types of extra human evaluations ##

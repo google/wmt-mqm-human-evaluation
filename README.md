@@ -2,7 +2,8 @@
 
 The contents of this repository are not an official Google product.
 
-We re-annotated the WMT English to German and Chinese to English test sets newstest2020, newstest2021, and the TED talks WMT21 test suite. All raters were professional translators that are native speakers of the target language. 
+We re-annotated the WMT English to German and Chinese to English test sets newstest2020, newstest2021, and the TED talks WMT21 test suite with raters that are professional translators and native speakers of the target language.
+The resulting human ratings are more reliable than crowd-worker human evaluations. 
 We refer to our paper for more details of the experimental setup.
 
 You can use the [MQM Viewer](https://github.com/google-research/google-research/tree/master/mqm_viewer) web app to open these TSV data files for computing scores as well as for interactively slicing and dicing.
@@ -29,6 +30,8 @@ You can use the [MQM Viewer](https://github.com/google-research/google-research/
 ## Individual system included in the re-evaluation for newstest2020##
 
 ### English to German ###
+ System
+
 Human-A.0\
 Human-B.0\
 Human-P.0\
@@ -41,16 +44,16 @@ Online-A.1574\
 eTranslation.737
 
 ### Chinese to English ###
-Human-A.0\
-Human-B.0\
-Huoshan Translate.919\
-DiDi NLP.401\
-WeChat AI.1525\
-Tencent Translation.1249\
-Online-B.1605\
-DeepMind.381\
-OPPO.1422\
-THUNLP.1498
+Human-A 3.43(1)\
+Human-B 3.62(2)\
+VolcTrans 5.03(3)\
+WeChat_AI 5.13(4)\
+Tencent_Translation 5.19(5)\
+OPPO 5.20(6)\
+THUNLP 5.34(7)\
+DeepMind 5.41(8)\
+DiDi_NLP 5.48(9)\
+Online-B 5.85(10)\
 
 
 ## Types of extra human evaluations ##

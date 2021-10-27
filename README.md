@@ -26,6 +26,77 @@ You can use the [MQM Viewer](https://github.com/google-research/google-research/
 
 8. [mqm-ted_zhen.tsv](ted/zhen/mqm-ted_zhen.tsv) MQM labels aqcuired for 15 submission of TED talks for Chinese-to-English.
 
+## newstest2021 ##
+
+### English to German ###
+
+| System  | expert-based MQM | WMT DA |
+| ------------- | ------------- | ------------- |
+| ref-C | -0.511(1) | 0.320(3) |
+| VolcTrans-GLAT | -1.039(2) | 0.301(6) |
+| Facebook-AI | -1.052(3) | 0.378(2) |
+| ref-A | -1.221(4) | 0.280(8) |
+| Nemo | -1.340(5) | 0.250(10) |
+| HuaweiTSC | -1.381(6) | 0.312(4) |
+| Online-W | -1.460(7) | 0.391(1) |
+| UEdin | -1.507(8) | 0.305(5) |
+| eTranslation | -1.695(9) | 0.281(7) |
+| VolcTrans-AT | -1.743(10) | 0.280(9) |
+
+### Chinese to English ###
+
+| System  | expert-based MQM | WMT DA |
+| ------------- | ------------- | ------------- |
+| ref-A | -4.350(1) | 0.019(3) |
+| NiuTrans | -4.633(2) | 0.042(1) |
+| SMU | -4.844(3) | -0.034(7) |
+| MiSS | -4.932(4) | -0.029(5) |
+| Borderline | -4.945(5) | -0.023(4) |
+| DIDI-NLP | -5.095(6) | 0.031(2) |
+| IIE-MT | -5.145(7) | -0.031(6) |
+| Facebook-AI | -5.215(8) | -0.037(8) |
+| Online-W | -5.567(9) | -0.087(9) |
+
+## TED talks ##
+
+### English to German ###
+
+| System  | expert-based MQM |
+| ------------- | ------------- |
+| ref.A | 0.91(1) |
+| Facebook-AI | 1.06(2) |
+| Online-W | 1.12(3) |
+| VolcTrans-AT | 1.24(4) |
+| metricsystem3 | 1.44(5) |
+| VolcTrans-GLAT | 1.49(6) |
+| HuaweiTSC | 1.50(7) |
+| metricsystem1 | 1.63(8) |
+| metricsystem2 | 1.69(9) |
+| metricsystem5 | 1.72(10) |
+| UEdin | 1.77(11) |
+| metricsystem4 | 1.78(12) |
+| eTranslation | 1.96(13) |
+| Nemo | 2.14(14) |
+
+### Chinese to English ###
+
+| System  | expert-based MQM |
+| ------------- | ------------- |
+| ref.B | 0.42(1) |
+| DIDI-NLP | 1.65(2) |
+| metricsystem2 | 1.76(3) |
+| metricsystem1 | 1.90(4) |
+| MiSS | 1.97(5) |
+| IIE-MT | 1.98(6) |
+| metricsystem4 | 2.05(7) |
+| metricsystem5 | 2.15(8) |
+| SMU | 2.202(9) |
+| Borderline | 2.40(10) |
+| NiuTrans | 2.49(11) |
+| Facebook-AI | 2.64(12) |
+| Online-W | 2.93(13) |
+| metricsystem3 | 2.99(14) |
+| ref.A | 5.52(15) |
 
 ## newstest2020 ##
 

@@ -1,8 +1,8 @@
-# Additional Human Evaluations for the Submissions of [WMT 2020](http://www.statmt.org/wmt20/) for English to German and Chinese to English.
+# Additional Human Evaluations for the Submissions of [WMT 2020](http://www.statmt.org/wmt20/) and [WMT 2021](http://www.statmt.org/wmt20/) for English to German and Chinese to English.
 
 The contents of this repository are not an official Google product.
 
-We re-annotated the WMT 2020 English to German and Chinese to English test sets, comprising 1418 segments (130 documents) and 2000 segments (155 documents) respectively. For each set we chose 10 "systems" for annotation, including the three reference translations available for English to German and the two references available for Chinese to English. The MT outputs included all top-performing systems according to the WMT human evaluation, augmented with systems we selected to increase diversity. All raters were professional translators that are native speakers of the target language. We acquired 3 ratings per segment and all segments were evaluated in context.
+We re-annotated the WMT English to German and Chinese to English test sets, comprising 1418 segments (130 documents) and 2000 segments (155 documents) respectively. For each set we chose 10 "systems" for annotation, including the three reference translations available for English to German and the two references available for Chinese to English. The MT outputs included all top-performing systems according to the WMT human evaluation, augmented with systems we selected to increase diversity. All raters were professional translators that are native speakers of the target language. We acquired 3 ratings per segment and all segments were evaluated in context.
 
 To ensure maximum diversity in ratings, we assigned documents in round-robin fashion to all 20 different sets of 3 raters from these pools. We chose an assignment order that roughly balanced the number of documents and segments per rater. Each rater was assigned a subset of documents, and annotated outputs from all 10 systems for those documents. Both documents and systems were anonymized and presented in a different random order to each rater. The number of segments per rater ranged from 6,830--7,220 for English to German and from 9,860--10,210 for Chinese to English.
 
@@ -12,16 +12,24 @@ You can use the [MQM Viewer](https://github.com/google-research/google-research/
 
 ## Files part of this repository ##
 
-1. [mqm_newstest2020_ende.tsv](ende/mqm_newstest2020_ende.tsv) MQM labels aqcuired for 10 submission of WMT 2020 for English-to-German.
+1. [mqm_newstest2020_ende.tsv](newstest2020/ende/mqm_newstest2020_ende.tsv) MQM labels aqcuired for 10 submission of newstest2020 for English-to-German.
 
-2. [psqm_newstest2020_ende.tsv](ende/psqm_newstest2020_ende.tsv) pSQM labels aqcuired for 10 submission of WMT 2020 for English-to-German.
+2. [psqm_newstest2020_ende.tsv](newstest2020/ende/psqm_newstest2020_ende.tsv) pSQM labels aqcuired for 10 submission of newstest2020 for English-to-German.
 
-3. [mqm_newstest2020_zhen.tsv](zhen/mqm_newstest2020_zhen.tsv) MQM labels aqcuired for 10 submission of WMT 2020 for Chinese-to-English.
+3. [mqm_newstest2020_zhen.tsv](newstest2020/zhen/mqm_newstest2020_zhen.tsv) MQM labels aqcuired for 10 submission of newstest2020 for Chinese-to-English.
 
-4. [psqm_newstest2020_zhen.tsv](zhen/psqm_newstest2020_zhen.tsv) pSQM labels aqcuired for 10 submission of WMT 2020 for Chinese-to-English.
+4. [psqm_newstest2020_zhen.tsv](newstest2020/zhen/psqm_newstest2020_zhen.tsv) pSQM labels aqcuired for 10 submission of newstest2020 for Chinese-to-English.
+
+5. [mqm-newstest2021_ende.tsv](newstest2021/ende/mqm-newstest2021_ende.tsv) MQM labels aqcuired for 15 submission of newstest2021 for English-to-German.
+
+6. [mqm-newstest2021_zhen.tsv](newstest2021/zhen/mqm-newstest2021_zhen.tsv) MQM labels aqcuired for 15 submission of newstest2021 for Chinese-to-English.
+
+7. [mqm-ted_ende.tsv](ted/ende/mqm-ted_ende.tsv) MQM labels aqcuired for 15 submission of TED talks for English-to-German.
+
+8. [mqm-ted_zhen.tsv](ted/zhen/mqm-ted_zhen.tsv) MQM labels aqcuired for 15 submission of TED talks for Chinese-to-English.
 
 
-## Individual system included in the re-evaluation ##
+## Individual system included in the re-evaluation for newstest2020##
 
 ### English to German ###
 Human-A.0\

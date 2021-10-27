@@ -1,4 +1,4 @@
-# Additional Human Evaluations for the Submissions of [WMT 2020](http://www.statmt.org/wmt20/) and [WMT 2021](http://www.statmt.org/wmt21/) for English to German and Chinese to English.
+# Expert-based Human Evaluations for the Submissions of [WMT 2020](http://www.statmt.org/wmt20/) and [WMT 2021](http://www.statmt.org/wmt21/) for English to German and Chinese to English.
 
 The contents of this repository are not an official Google product.
 

@@ -6,7 +6,7 @@ We re-annotated the WMT English to German and Chinese to English test sets newst
 The resulting human ratings are more reliable than crowd-worker human evaluations. 
 We refer to our [paper](https://arxiv.org/pdf/2104.14478.pdf) for more details of the experimental setup.
 
-You can use the [MQM Viewer](https://github.com/google-research/google-research/tree/master/mqm_viewer) web app to open these TSV data files for computing scores as well as for interactively slicing and dicing.
+You can use the [MQM Viewer](https://github.com/google-research/google-research/tree/master/mqm_viewer) web app to open these TSV data files for computing scores as well as for interactively slicing and dicing (details and screenshots presented further down in this documentation).
 
 ## Files part of this repository ##
 
@@ -143,6 +143,21 @@ Since we are ultimately interested in scoring segments, we require a weighting o
 These weights apply to all error categories with two exceptions. We assigned a weight of 0.1 to Minor Fluency/Punctuation errors to reflect their mostly non-linguistic nature. Decisions like the style of quotation mark to use or the spacing around punctuation affect the appearance of a text but do not change its meaning. Unlike other kinds of Minor errors, these are easy to correct algorithmically, so we assign a low weight to ensure that their main role is to distinguish between systems that are equivalent in other respects. Major Fluency/Punctuation errors, which render a text ungrammatical or change its meaning (eg, eliding the comma in “Let’s eat, grandma”), have standard weighting.
 The second exception is the singleton Non-translation category, with a weight of 25, equivalent to five Major errors.
 
+#### MQM Viewer: interactive analysis tool for MQM evaluations
+The [MQM Viewer](https://github.com/google-research/google-research/tree/master/mqm_viewer) web app can be used to see detailed analysis of MQM evaluations. To use it, download the files `mqm-viewer.html`, `mqm-viewer.js`, and `mqm-viewer.css` to your computer:
+```
+wget https://raw.githubusercontent.com/google-research/google-research/master/mqm_viewer/mqm-viewer.{html,js,css}
+```
+Then, simply open the `mqm-viewer.html` file in a web browser, and use the "Choose file" button to pick an MQM TSV data file (downloaded to your computer). MQM data spans several columns, so it's best to use a desktop or laptop computer with a wide screen. You can intereactively slice and dice the evaluation results in MQM Viewer by filtering down to specific systems, documents, etc. Here are a couple of screenshot of the tool:
+
+**Screenshot of evaluation metrics in MQM Viewer:**
+
+![mqm-viewer-metrics](https://user-images.githubusercontent.com/86793140/140813203-c6d33dc7-3a27-45ba-9133-628c0f29f338.png)
+
+**Screenshot of examples of rated sentences in MQM Viewer:**
+
+![mqm-viewer-examples](https://user-images.githubusercontent.com/86793140/140813224-3bda536f-1f69-4f68-9b49-24bd058d666f.png)
+
 ### Scalar Quality Metrics (SQM) ###
 Similar to the WMT setting, the Scalar Quality Metric (SQM) evaluation collects segment-level scalar ratings with document context. Different from the 0-100 assessment of translation quality used in WMT, SQM uses a 0-6 scale for
 translation quality assessment. Another difference is that the sentences were rated by professional translators instead of crowd workers or researchers. We refer to pSQM for SQM labels that were acquired with professional translators.
@@ -161,3 +176,4 @@ If you use this data, please cite the following paper:
       primaryClass={cs.CL}
 }
 ```
+

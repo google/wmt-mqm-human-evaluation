@@ -1,2 +1,6 @@
 2021-10-27.09-51-00.freitag-macbookpro.roam.corp.google.com cp ../../../wmt21-metrics/annotations/ende/mqm-ted_ende.tsv .
 2021-10-27.09-51-00.freitag-macbookpro.roam.corp.google.com l
+2022-01-24.14-31-52.freitag.mtv.corp.google.com [2022-01-24 14:31:52 -0800] cd ende/
+2022-01-24.14-31-53.freitag.mtv.corp.google.com [2022-01-24 14:31:52 -0800] l
+2022-01-24.14-32-11.freitag.mtv.corp.google.com [2022-01-24 14:32:10 -0800] cp /google/src/cloud/freitag/mtme/google3/mqm-ted_ende.avg_seg_scores.tsv .
+2022-01-24.14-32-20.freitag.mtv.corp.google.com [2022-01-24 14:32:20 -0800] head mqm-ted_ende.avg_seg_scores.tsv 

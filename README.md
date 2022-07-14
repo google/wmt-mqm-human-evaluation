@@ -18,13 +18,13 @@ You can use the [MQM Viewer](https://github.com/google-research/google-research/
 
 4. [psqm_newstest2020_zhen.tsv](newstest2020/zhen/psqm_newstest2020_zhen.tsv) pSQM labels aqcuired for 10 submission of newstest2020 for Chinese-to-English.
 
-5. [mqm-newstest2021_ende.tsv](newstest2021/ende/mqm-newstest2021_ende.tsv) MQM labels aqcuired for 15 submission of newstest2021 for English-to-German.
+5. [mqm_newstest2021_ende.tsv](newstest2021/ende/mqm_newstest2021_ende.tsv) MQM labels aqcuired for 15 submission of newstest2021 for English-to-German.
 
-6. [mqm-newstest2021_zhen.tsv](newstest2021/zhen/mqm-newstest2021_zhen.tsv) MQM labels aqcuired for 15 submission of newstest2021 for Chinese-to-English.
+6. [mqm_newstest2021_zhen.tsv](newstest2021/zhen/mqm_newstest2021_zhen.tsv) MQM labels aqcuired for 15 submission of newstest2021 for Chinese-to-English.
 
-7. [mqm-ted_ende.tsv](ted/ende/mqm-ted_ende.tsv) MQM labels aqcuired for 15 submission of TED talks for English-to-German.
+7. [mqm_ted_ende.tsv](ted/ende/mqm_ted_ende.tsv) MQM labels aqcuired for 15 submission of TED talks for English-to-German.
 
-8. [mqm-ted_zhen.tsv](ted/zhen/mqm-ted_zhen.tsv) MQM labels aqcuired for 15 submission of TED talks for Chinese-to-English.
+8. [mqm_ted_zhen.tsv](ted/zhen/mqm_ted_zhen.tsv) MQM labels aqcuired for 15 submission of TED talks for Chinese-to-English.
 
 ## newstest2021 ##
 

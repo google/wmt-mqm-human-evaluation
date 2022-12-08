@@ -26,6 +26,11 @@ You can use the [MQM Viewer](https://github.com/google-research/google-research/
 
 8. [mqm_ted_zhen.tsv](ted/zhen/mqm_ted_zhen.tsv) MQM labels aqcuired for 15 submission of TED talks for Chinese-to-English.
 
+9. [mqm_general_MT2022_ende.tsv](generalMT2022/ende/mqm_generalMT2022_ende.tsv) MQM labels aqcuired for 16 submission of generalMT2022 for English-to-German.
+
+10. [mqm_generalMT2022_zhen.tsv](generalMT2022/zhen/mqm_generalMT2022_zhen.tsv) MQM labels aqcuired for 16 submission of generalMT2022 for Chinese-to-English.
+
+
 ## newstest2021 ##
 
 ### English to German ###

@@ -1,4 +1,4 @@
-# Expert-based Human Evaluations for the Submissions of [WMT 2020](http://www.statmt.org/wmt20/) and [WMT 2021](http://www.statmt.org/wmt21/) for English to German and Chinese to English.
+# Expert-based Human Evaluations for the Submissions of [WMT 2020](http://www.statmt.org/wmt20/), [WMT 2021](http://www.statmt.org/wmt21/), [WMT 2022](http://www.statmt.org/wmt22/) and [WMT 2023](http://www.statmt.org/wmt23/).
 
 The contents of this repository are not an official Google product.
 
@@ -29,6 +29,10 @@ You can use the [Marot](https://github.com/google-research/google-research/tree/
 9. [mqm_general_MT2022_ende.tsv](generalMT2022/ende/mqm_generalMT2022_ende.tsv) MQM labels aqcuired for 16 submission of generalMT2022 for English-to-German.
 
 10. [mqm_generalMT2022_zhen.tsv](generalMT2022/zhen/mqm_generalMT2022_zhen.tsv) MQM labels aqcuired for 16 submission of generalMT2022 for Chinese-to-English.
+
+11. [mqm_general_MT2023_ende.tsv](generalMT2023/ende/mqm_generalMT2023_ende.tsv) MQM labels aqcuired for 13 submission of generalMT2023 for English-to-German.
+
+12. [mqm_generalMT2023_zhen.tsv](generalMT2023/zhen/mqm_generalMT2023_zhen.tsv) MQM labels aqcuired for 16 submission of generalMT2023 for Chinese-to-English.
 
 
 ## newstest2021 ##

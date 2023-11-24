@@ -153,11 +153,11 @@ These weights apply to all error categories with two exceptions. We assigned a w
 The second exception is the singleton Non-translation category, with a weight of 25, equivalent to five Major errors.
 
 #### Marot: interactive analysis tool for MQM evaluations
-The [Marot](https://github.com/google-research/google-research/tree/master/marot) web app can be used to see detailed analysis of MQM evaluations. To use it, download the files `marot.html`, `marot.js`, `marot-histogram.js`, `marot-sigtests.js`, and `marot.css` to your computer:
+The [Marot](https://github.com/google-research/google-research/tree/master/marot) web app can be used to see detailed analysis of MQM evaluations. To use it, download the file `marot-lite.html` to your computer:
 ```
-wget https://raw.githubusercontent.com/google-research/google-research/master/marot/marot{-sigtests.js,-histogram.js,.html,.js,.css}
+wget https://raw.githubusercontent.com/google-research/google-research/master/marot/marot-lite.html
 ```
-Then, simply open the `marot.html` file in a web browser, and use the "Choose file" button to pick an MQM TSV data file (downloaded to your computer). MQM data spans several columns, so it's best to use a desktop or laptop computer with a wide screen. You can intereactively slice and dice the evaluation results in Marot by filtering down to specific systems, documents, etc. Here are a couple of screenshot of the tool:
+Then, simply open the `marot-lite.html` file in a web browser, and use the "Choose file" button to pick an MQM TSV data file (downloaded to your computer). MQM data spans several columns, so it's best to use a desktop or laptop computer with a wide screen. You can intereactively slice and dice the evaluation results in Marot by filtering down to specific systems, documents, etc. Here are a couple of screenshot of the tool:
 
 **Screenshot of evaluation metrics in Marot:**
 
